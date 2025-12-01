@@ -1,0 +1,22 @@
+.container {
+    @apply rounded-full bg-gray-light text-gray cursor-pointer overflow-hidden;
+    @apply grid place-content-center;
+    @apply border border-white;
+}
+.img {
+    @apply h-full w-full object-cover aspect-square;
+}
+.title {
+}
+
+/* Sizes */
+.md {
+    @apply min-h-12 min-w-12;
+    @apply h-12 w-12;
+    @apply text-base;
+}
+.sm {
+    @apply min-h-8 min-w-8;
+    @apply h-8 w-8;
+    @apply text-xs;
+}

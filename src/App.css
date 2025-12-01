@@ -1,0 +1,43 @@
+/* Common styles */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+.main-content-container {
+    width: min(1200px, 90%);
+    margin: auto;
+}
+/* 8-10 for smaller devies  sm */
+/* 12-14 for medium devices  md */
+/* html,body{
+    font-size: 16px;
+} */
+/* 60/16 */
+/* use rem used for font line height and width */
+/* for container image use % */
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.cart-items-count {
+    position: absolute;
+    font-size: 12px;
+    background-color: green;
+    border-radius: 100%;
+    color: white;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-40%, -90%);
+}
+
+/* Hide scrollbar but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}

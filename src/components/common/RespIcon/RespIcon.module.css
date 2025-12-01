@@ -1,0 +1,22 @@
+.icon svg {
+    width: 100%;
+    height: 100%;
+}
+.badge {
+    @apply absolute top-0 right-0 w-2 h-2 bg-error rounded-full;
+}
+
+/* Sizes */
+.sm {
+    @apply h-4 w-4;
+}
+.md {
+    @apply h-6 w-6;
+}
+.lg {
+    @apply h-8 w-8;
+}
+.icon {
+    @apply relative;
+    @apply grid place-content-center;
+}

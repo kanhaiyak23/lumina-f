@@ -1,0 +1,32 @@
+.title {
+    @apply cursor-pointer text-[#767676] font-normal  active:font-semibold px-3 py-2;
+}
+.titleActive {
+    @apply border-r-black   text-[#333333] font-semibold border-r-[7px] rounded-tl-[20px] rounded-bl-[20px]  border-black overflow-hidden;
+    height: 100%;
+}
+.container {
+    @apply px-2 py-3;
+    @apply flex gap-4;
+    @apply border-r-black;
+
+    /* add */
+    @apply h-full;
+    @apply overflow-auto;
+}
+.titleWrapper {
+    @apply flex gap-2 mb-3;
+    @apply flex-col;
+    @apply w-[280px];
+    @apply overflow-auto;
+}
+.titleWrapper::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px; /* Adjust thickness */
+    height: 100%; /* Full height of the container */
+    background-color: black;
+    pointer-events: none; /* Prevents it from interfering with clicks */
+}

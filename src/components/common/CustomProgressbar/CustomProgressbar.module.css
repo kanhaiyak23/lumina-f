@@ -1,0 +1,29 @@
+.container {
+    @apply w-full bg-gray-light h-3 rounded-md relative;
+}
+.stick {
+    @apply h-full rounded-md;
+}
+.step {
+    @apply w-1 h-1 bg-gray rounded-sm;
+}
+.stepContainer {
+    @apply absolute left-0 w-full h-full flex justify-between items-center;
+}
+
+/* Variants */
+.success {
+    @apply bg-success;
+}
+.error {
+    @apply bg-error;
+}
+.blue-bold {
+    @apply bg-blue-dark;
+}
+.completed {
+    @apply bg-green;
+}
+.primary {
+    @apply bg-primary;
+}

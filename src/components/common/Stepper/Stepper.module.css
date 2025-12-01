@@ -1,0 +1,51 @@
+.title {
+    @apply cursor-pointer text-black font-semibold;
+    /* @apply hover:border-primary  */
+    @apply px-0 py-2 flex justify-center items-center gap-3 text-center border-b-2 border-b-transparent;
+    @apply flex flex-col gap-2;
+    @apply relative;
+}
+.titleContent {
+    @apply absolute bottom-[-1.3rem] right-1/2 translate-x-1/2;
+    @apply text-sm;
+    @apply flex gap-2 items-center;
+}
+.titleActive {
+    /* @apply border-primary */
+    /* @apply text-primary; */
+}
+.container {
+    @apply h-full;
+}
+.titleWrapper {
+    @apply flex gap-0 mb-8;
+    @apply items-center justify-center;
+    @apply max-w-[85%] mx-auto;
+}
+.breakLine {
+    @apply h-0;
+    @apply w-full min-w-28 max-w-52;
+    /* @apply flex-[0_1_165px] h-0; */
+    @apply border-b border-b-gray-light;
+}
+.breakLineActive {
+    @apply border-b border-b-primary;
+}
+.radioIcon {
+    @apply h-6 w-6 rounded-full border border-gray-light;
+    @apply outline outline-4 outline-offset-0 outline-transparent;
+    /* @apply bg-primary text-white text-sm grid place-content-center; */
+    @apply grid place-content-center;
+}
+.radioIconActive {
+    @apply outline-gray-light;
+}
+.radioIconContent {
+    @apply w-3 h-3 bg-primary rounded-full hidden;
+}
+.radioIconContentActive {
+    @apply block;
+}
+.radioIconActiveted {
+    @apply bg-primary;
+}

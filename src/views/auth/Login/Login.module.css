@@ -1,0 +1,10 @@
+.cardwidth {
+    @apply bg-white min-h-[auto] rounded-lg shadow dark:border md:mt-0 xl:p-0 dark:bg-gray-800 dark:border-gray-700;
+    width: 428px;
+}
+
+@media only screen and (max-width: 720px) {
+    .cardwidth {
+        width: auto;
+    }
+}

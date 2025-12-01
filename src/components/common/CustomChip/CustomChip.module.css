@@ -1,0 +1,64 @@
+.chip {
+    @apply flex gap-1 cursor-default items-center tracking-wide w-fit rounded-md;
+    @apply h-fit;
+    @apply rounded-xl;
+}
+
+/* Variants */
+.success {
+    @apply bg-success-light text-success;
+}
+.active {
+    @apply bg-[#EBFEFF] text-[#0E7490];
+}
+.default {
+    @apply bg-[#F5F7FA] text-gray;
+}
+.warning {
+    @apply bg-warning-light  text-warning-dark;
+}
+.pending {
+    @apply bg-pending-light text-pending;
+}
+.error {
+    @apply bg-error-light text-error;
+}
+.purple {
+    @apply bg-purple-light text-purple;
+}
+.primary {
+    @apply bg-primary text-white;
+}
+.blue {
+    @apply bg-[#F0F6FF] text-[#1347CC];
+}
+.blue-bold {
+    @apply bg-blue-dark text-white;
+}
+.completed {
+    @apply bg-green-light text-green;
+}
+
+.label {
+    @apply font-medium;
+}
+/* Sizes */
+.md {
+    @apply text-sm;
+    @apply px-[0.625rem] py-[0.125rem];
+}
+.sm {
+    @apply text-xs;
+    @apply px-[0.625rem] py-[0.125rem];
+}
+.lg {
+    @apply text-sm;
+    @apply px-3 py-1;
+}
+.lg-rounded {
+    @apply text-sm;
+    @apply px-3 py-1;
+}
+.icon {
+    @apply w-4 h-4;
+}

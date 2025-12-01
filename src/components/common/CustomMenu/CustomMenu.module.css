@@ -1,0 +1,9 @@
+.popover {
+    @apply absolute  border border-gray-300 rounded bg-white shadow-md z-50;
+    @apply max-h-96 overflow-auto;
+    top: 110%;
+}
+
+.popoverAbove {
+    top: -90%;
+}

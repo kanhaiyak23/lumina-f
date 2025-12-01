@@ -1,0 +1,15 @@
+.wrapper {
+    @apply py-4 px-3;
+    @apply rounded-lg border;
+    @apply bg-white;
+}
+
+.default {
+    @apply border-gray-light;
+}
+.primary {
+    @apply border-primary;
+}
+.bold {
+    @apply border-black;
+}

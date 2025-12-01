@@ -1,0 +1,41 @@
+.title {
+    @apply text-base font-semibold;
+}
+.titleActive {
+    /* @apply; */
+}
+.titleWrapper {
+    @apply flex gap-4 flex-1;
+}
+.contentWrapper {
+    @apply px-3 pb-3 pt-2;
+}
+.header {
+    @apply flex w-full cursor-pointer py-3 px-4 gap-4;
+}
+.headerActive {
+    /* @apply border-l-4 border-l-primary; */
+}
+
+.container {
+    @apply flex flex-col;
+    @apply rounded-xl;
+}
+
+.icon {
+    @apply w-6 block;
+}
+
+/* Variants */
+.paper {
+    @apply bg-white border border-gray-light;
+}
+.header-paper {
+    @apply border-l-4 border-l-transparent;
+}
+.headerActive-paper svg {
+    @apply fill-black;
+}
+.headerActive-paper {
+    @apply text-black;
+}

@@ -1,0 +1,37 @@
+.inputWrapper {
+    @apply text-gray-600 flex align-middle p-[11px] h-[44px] border border-gray-300 rounded-lg relative;
+    @apply placeholder:text-[#94A3B8];
+    @apply min-w-40;
+}
+.icon {
+    @apply absolute top-[9px] right-3 h-6 w-6 text-[#94A3B8];
+}
+.input {
+    @apply leading-[1.3] text-[14px] overflow-hidden w-[85%] whitespace-nowrap;
+}
+.selectError {
+    @apply border-red-600;
+    @apply text-red-600;
+}
+.selectError > label {
+    @apply text-red-600;
+}
+.selectError .inputWrapper {
+    @apply bg-red-50 border-red-600;
+}
+.selectWrapper {
+    @apply flex flex-col gap-[4px] cursor-pointer;
+}
+
+.popover {
+    @apply absolute left-0 right-0 border border-gray-300 rounded bg-white shadow-md z-10;
+    top: 110%;
+}
+
+.popoverAbove {
+    top: -90%;
+}
+
+.option {
+    @apply p-2 cursor-pointer hover:bg-gray-100 text-sm;
+}

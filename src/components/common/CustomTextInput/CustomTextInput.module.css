@@ -1,0 +1,50 @@
+/* .wrapper {
+  @apply text-sm flex align-middle py-2 px-3 h-[44px] border border-gray-300 rounded-lg relative;
+  @apply placeholder:text-[#94A3B8];
+  @apply min-w-40;
+} */
+.containerWrapper {
+    @apply flex flex-col gap-1 cursor-pointer;
+}
+.error {
+    @apply text-red-600;
+}
+.error > label {
+    @apply text-red-600;
+}
+.error .wrapper {
+    @apply bg-red-50 border-red-600;
+}
+
+.icon {
+    @apply min-w-10  text-[#94A3B8];
+    @apply grid place-self-center;
+    /* @apply flex-[0_0_100%]; */
+}
+
+.startIcon {
+    @apply pl-3 pr-1;
+}
+.endIcon {
+    @apply pr-3 pl-1;
+}
+.option {
+    @apply p-2 cursor-pointer hover:bg-gray-100 text-sm;
+}
+
+/* New classes */
+.wrapper {
+    @apply text-sm flex align-middle h-[44px] border border-gray-300 rounded-lg relative;
+    @apply min-w-40;
+    @apply items-center;
+    @apply overflow-hidden;
+}
+.input {
+    @apply placeholder:text-[#A39E9E] placeholder:font-thin;
+    @apply text-sm;
+    @apply border-none;
+    @apply px-2 py-3;
+    @apply outline-none focus:ring-0;
+    @apply bg-transparent;
+    @apply flex-1;
+}

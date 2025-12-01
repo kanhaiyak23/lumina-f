@@ -1,0 +1,14 @@
+{
+    "assetsPath": "src/assets/About_img/",
+    "componentLibrary": "none",
+    "componentsPath": "src/components",
+    "defaultConfigPath": "/Users/kk/.anima",
+    "framework": "react",
+    "language": "javascript",
+    "nextRouterType": null,
+    "projectRoot": "/Users/kk/Desktop/HTS/Microgreens/microgreens",
+    "styleguidePath": "",
+    "styling": "tailwind",
+    "tailwindConfigPath": "tailwind.config.js",
+    "tailwindConfigReuseEnabled": false
+}

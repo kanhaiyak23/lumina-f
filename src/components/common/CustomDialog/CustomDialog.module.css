@@ -1,0 +1,28 @@
+.container {
+    @apply fixed z-50 h-screen w-screen top-0 left-0  flex justify-center items-center;
+}
+
+.overlay {
+    @apply absolute h-screen w-screen top-0 left-0 flex justify-center items-center;
+    @apply bg-[#AFAFAF66];
+}
+
+.content {
+    @apply relative z-50 px-4 py-4 min-w-[400px] bg-white border-none border-gray-400 rounded-xl;
+    @apply max-w-[90%];
+    @apply max-h-[90vh];
+    @apply overflow-auto;
+}
+
+.titleWrapper {
+    @apply flex justify-between items-center pb-2  mb-3 gap-4;
+}
+
+.title {
+    @apply text-base text-[#344054] font-semibold;
+    @apply text-2xl text-black w-full;
+}
+
+.icon {
+    @apply w-5 h-5 cursor-pointer;
+}

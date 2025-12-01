@@ -1,0 +1,17 @@
+.title {
+    @apply cursor-pointer text-black font-semibold;
+    @apply hover:border-primary hover:text-primary active:font-semibold px-3 py-2 flex justify-center items-center gap-3 text-center border-b-2 border-b-transparent;
+    @apply gap-1;
+}
+.titleActive {
+    @apply border-primary text-primary;
+}
+.container {
+    @apply h-full w-full;
+    @apply flex flex-1 flex-col overflow-hidden;
+}
+.titleWrapper {
+    @apply flex gap-0 mb-8;
+    @apply border-b border-b-gray-light;
+    @apply overflow-auto;
+}

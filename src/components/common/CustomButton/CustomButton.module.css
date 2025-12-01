@@ -1,0 +1,58 @@
+.wrapper {
+    @apply flex flex-row gap-2 justify-center items-center;
+    @apply bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold rounded items-center;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply w-auto text-base tracking-wide;
+    @apply rounded-lg;
+    @apply font-medium;
+    @apply h-fit;
+}
+
+/* Sizes */
+.md {
+    @apply py-2 px-4;
+    @apply text-sm;
+}
+.sm {
+    @apply py-1 px-3;
+    @apply text-sm;
+}
+/* Variants */
+.text {
+    @apply bg-white text-primary border border-none hover:bg-primary-light hover:border-primary;
+}
+.default {
+    @apply bg-white text-gray-dark border border-gray-light hover:bg-gray-light active:bg-gray-light;
+}
+.contained {
+    @apply bg-primary text-white hover:bg-primary-dark active:bg-primary-dark;
+}
+.outlined {
+    @apply bg-white text-primary border border-primary hover:bg-primary-light;
+}
+.warning {
+    @apply bg-warning text-white border border-warning hover:bg-warning-dark;
+}
+.pending {
+    @apply bg-pending-light text-pending border-0 border-pending hover:bg-pending-dark hover:text-pending-light;
+}
+.error {
+    @apply bg-error text-white border border-error-light hover:bg-error-dark;
+}
+.disabled {
+    @apply bg-gray-200 text-gray-400 border-0 border-gray-light hover:bg-gray-light active:bg-gray-light;
+}
+.green {
+    @apply bg-green text-white border-0 border-green hover:bg-green-dark active:bg-green-dark;
+}
+.lightgreen {
+    @apply bg-[#04A42A] text-white border-0 border-[#04A42A] hover:bg-green-dark active:bg-green-dark;
+}
+/* Others */
+.loaderSpinner {
+    @apply border-gray-400 h-6 w-6 animate-spin rounded-full border-4 border-t-gray-800;
+}
+
+.wrapper > svg {
+    @apply h-5 w-5;
+}

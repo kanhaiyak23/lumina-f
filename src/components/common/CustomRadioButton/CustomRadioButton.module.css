@@ -1,0 +1,3 @@
+.inputWrapper {
+    @apply flex max-w-md gap-4 items-center;
+}

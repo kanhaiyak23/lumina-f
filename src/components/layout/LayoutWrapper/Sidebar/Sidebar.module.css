@@ -1,0 +1,55 @@
+.wrapper {
+    @apply h-screen overflow-auto;
+    @apply px-0 pb-3;
+    @apply min-w-[17rem] border-r border-r-[#D6D6D6];
+    @apply flex flex-col gap-2;
+    @apply relative;
+}
+
+.brand {
+    @apply w-full h-16 object-contain;
+    @apply px-3 mx-auto;
+    @apply hover:cursor-pointer;
+    @apply sticky pt-4 top-0 bg-white self-start py-4 z-50;
+    @apply flex items-center justify-center;
+}
+.brand > img {
+    @apply w-32;
+}
+
+.menu {
+    @apply flex flex-col h-full;
+}
+
+.menuItem {
+    @apply flex gap-[12px] p-2 pl-5 items-center rounded-none;
+    @apply hover:bg-primary-light;
+    @apply cursor-pointer;
+    @apply hover:text-primary;
+}
+
+.menuItemName {
+    @apply text-black font-medium;
+}
+.menuItemNameActive {
+    @apply text-primary;
+}
+.icon {
+    @apply w-[24px] h-[24px] relative;
+}
+
+.menuItem:hover svg {
+    @apply fill-primary;
+}
+.menuItemActive {
+    @apply bg-primary-light;
+}
+
+.menuItemActive svg {
+    @apply fill-primary;
+}
+
+.menuItemActive .icon {
+    /* fill: #108a00 !important; */
+    @apply fill-primary;
+}

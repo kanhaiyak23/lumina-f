@@ -1,0 +1,11 @@
+.wrapper {
+    @apply border border-gray-light rounded-lg;
+    @apply relative flex gap-2 items-center;
+    @apply px-3 py-2 flex-1 min-w-28;
+}
+.input {
+    @apply placeholder:text-black;
+    @apply text-black;
+    @apply text-sm outline-none font-medium;
+    @apply flex-1;
+}

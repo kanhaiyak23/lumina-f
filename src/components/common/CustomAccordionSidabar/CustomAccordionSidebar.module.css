@@ -1,0 +1,29 @@
+.title {
+    /* @apply text-sm; */
+}
+.titleActive {
+    @apply text-primary font-medium;
+}
+.titleWrapper {
+    @apply flex gap-4;
+}
+.contentWrapper {
+    /* @apply px-4 pb-3 pt-0; */
+}
+.header {
+    @apply flex w-full justify-between cursor-pointer py-3 px-4;
+    @apply border-l-4 border-l-transparent;
+}
+.headerActive {
+    @apply border-l-4 border-l-primary;
+}
+.headerActive svg {
+    @apply fill-primary;
+}
+.container {
+    @apply flex flex-col bg-white border border-none;
+}
+
+.icon {
+    @apply w-6 block;
+}
