@@ -73,15 +73,15 @@ const Products = () => {
                                 {product.salePrice ? (
                                     <>
                                         <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                                            ${product.salePrice}
+                                            {product.salePrice}
                                         </span>
                                         <span className="text-lg text-gray-400 line-through">
-                                            ${product.originalPrice}
+                                            {product.originalPrice}
                                         </span>
                                     </>
                                 ) : (
                                     <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                                        ${product.price}
+                                        {product.price}
                                     </span>
                                 )}
                             </div>

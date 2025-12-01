@@ -13,6 +13,7 @@ import CustomRange from "../../components/common/CustomRange";
 import CustomDropdownMenu from "../../components/CustomDropdownMenu.jsx";
 import sorting from "../../assets/ProductPage/arrow-data-transfer-vertical.svg";
 import LoaderWebp from "../../assets/loading.webp";
+import ProductHero from "../herosection/productherosection.jsx";
 import {
     toggleCategory,
     setPriceRange,
@@ -118,6 +119,9 @@ const ProductPage = () => {
 
     return (
         <div className="min-h-screen bg-[#FFFFFF]">
+            <div className="w-full">
+                <ProductHero />
+            </div>
             <div className="main-content-container mx-auto py-16">
                 <div className="flex flex-col md:flex-row gap-8">
                     {/* Filters Section */}

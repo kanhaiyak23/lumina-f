@@ -6,12 +6,11 @@ import CartItem from "./CartItem";
 import CustomButton from "../../components/common/CustomButton/CustomButton";
 import { selectCartItems, selectCartTotal, selectAddress } from "../../Redux Store/Slices/cart";
 import { createNewOrder, updatePaymentStatus } from "../../Redux Store/Slices/order";
-
+import CartHero from "../../views/herosection/herosection";
 import EmptyCart from "./EmptyCart";
 import Breadcrumb from "../../components/common/Breadcumb";
-import HeroSection from "../../views/herosection/herosection";
-import HeroSectionCart from "../../assets/ProductPage/productHero1.webp";
-import { supabase } from "../../supabaseClient";
+
+
 import { setAddresses } from "../../Redux Store/Slices/cart";
 import { toast } from "react-hot-toast";
 import { processOrder } from "../../Redux Store/Slices/order";
@@ -156,7 +155,7 @@ const Cart = () => {
     return (
         <div className="min-h-screen">
             <div className="w-full">
-                <HeroSection title="Cart" image={HeroSectionCart} />
+                <CartHero />
             </div>
             <div className="main-content-container py-4 mx-auto px-4 sm:px-6 lg:px-8">
                 <Breadcrumb

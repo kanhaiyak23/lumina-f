@@ -20,19 +20,19 @@ const About = () => {
     const features = [
         {
             title: "Premium Quality",
-            icon: image1,
+            icon: "https://cdn.vectorstock.com/i/1000v/71/82/premium-quality-product-label-vector-1487182.jpg",
         },
         {
             title: "Sustainable Fashion",
-            icon: image2,
+            icon: "https://img.freepik.com/free-vector/hand-drawn-sustainable-fashion-infographic_23-2148836463.jpg",
         },
         {
             title: "Curated Collections",
-            icon: image3,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxNc13gwsNxTIP6EESGoygfCsSGwUCloUxEA&s",
         },
         {
             title: "Fast Delivery",
-            icon: image4,
+            icon: "https://png.pngtree.com/png-vector/20230507/ourmid/pngtree-fast-delivery-label-design-vector-png-image_7087605.png",
         },
     ];
 
@@ -106,7 +106,7 @@ const About = () => {
                                 key={index}
                                 className="bg-white rounded-2xl p-8 flex flex-col items-center text-center shadow-lg border border-purple-100 hover:shadow-xl transition-shadow"
                             >
-                                <div className="w-32 h-32 rounded-full border-4 border-purple-500 p-4 mb-6 flex items-center justify-center bg-gradient-to-br from-purple-50 to-indigo-50">
+                                <div className="w-32 h-32 rounded-full border-4  p-4 mb-6 flex items-center justify-center bg-gradient-to-br from-purple-50 to-indigo-50">
                                     <img
                                         src={feature.icon}
                                         alt={feature.title}

@@ -1,38 +1,30 @@
-import React from "react";
-
-const HeroSection = ({ title, image }) => {
+const CartHero = () => {
     return (
-        <section className="w-full h-full bg-gradient-to-br from-purple-50 to-indigo-50">
-            <div className="flex w-full h-full">
-                <div className="flex-1 h-auto flex flex-col justify-center items-center py-10">
-                    <div
-                        className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl 
-                        leading-[2rem] sm:leading-[2.5rem] md:leading-[2.875rem] lg:leading-[2.875rem] 
-                        -mb-6 sm:-mb-10 md:-mb-14 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent font-bold"
-                    >
-                        {title}
-                    </div>
+        <section className="w-full py-20 bg-gradient-to-br from-amber-100 to-orange-100">
+            <div className="max-w-6xl mx-auto px-6 text-center">
 
-                    {/* Background Title */}
-                    <div
-                        className="text-[3rem] sm:text-[4.5rem] md:text-[6.25rem] lg:text-[6.25rem] xl:text-[6.25rem] 
-                        leading-[4rem] sm:leading-[6rem] md:leading-[10rem] lg:leading-[10rem] xl:leading-[10rem]
-                        font-bold bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent text-center opacity-[10%] whitespace-nowrap"
-                    >
-                        {title}
-                    </div>
+                {/* Main Title */}
+                <h1 className="text-5xl md:text-7xl font-extrabold leading-tight 
+                    bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
+                    Your Shopping Cart
+                </h1>
+
+                {/* Background Title */}
+                <div className="relative">
+                    <span className="block text-[8rem] md:text-[12rem] font-extrabold 
+                        bg-gradient-to-r from-orange-400 to-amber-400 
+                        bg-clip-text text-transparent opacity-10 leading-none select-none whitespace-nowrap">
+                        CART
+                    </span>
                 </div>
 
-                <div className="flex-1 flex flex-col justify-center items-center w-full">
-                    <img
-                        src={image}
-                        alt="herosection"
-                        className="w-full h-full sm:w-auto sm:h-auto object-cover"
-                    />
-                </div>
+                {/* Subtitle */}
+                <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
+                    Review your selections before checkout. Your next purchase is just a click away.
+                </p>
             </div>
         </section>
     );
 };
 
-export default HeroSection;
+export default CartHero;
