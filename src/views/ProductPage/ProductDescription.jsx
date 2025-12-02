@@ -14,12 +14,22 @@ import { warnToast } from "../../utils/toasts";
 
 const ProductDetails = () => {
     const dispatch = useDispatch();
+    
     const product = useSelector(selectSelectedProduct);
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
     const [selectedImage, setSelectedImage] = useState(0);
     const [quantity, setQuantity] = useState(1);
     const [activeTab, setActiveTab] = useState(0);
     const selectAllProducts = useSelector(state => state.products.products);
+    console.log(product)
+    if (!product) {
+    return (
+        <div className="w-full py-20 text-center text-gray-600">
+            Loading product...
+        </div>
+    );
+}
+
 
     const handleAddToCart = product => {
         // Check if user is authenticated
@@ -125,43 +135,7 @@ const ProductDetails = () => {
                 </div>
             ),
         },
-        {
-            id: "technical",
-            title: "Technical Details",
-            data: "technical",
-            component: (
-                <div className="space-y-6">
-                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#333333] mb-4">
-                        Technical Details
-                    </h3>
-                    <p className="text-sm sm:text-base text-[#333333]">
-                        Wheatgrass microgreens are naturally rich in vitamins A, C, and E along with
-                        iron, magnesium, amino acids, antioxidants, and chlorophyll. Each tray is
-                        grown using clean water and pesticide-free seeds to preserve their potent
-                        nutritional profile.
-                    </p>
-                </div>
-            ),
-        },
-        {
-            id: "additional",
-            title: "Additional Info",
-            data: "additional",
-            component: (
-                <div className="space-y-6">
-                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#333333] mb-4">
-                        Additional Info
-                    </h3>
-                    <p className="text-sm sm:text-base text-[#333333]">
-                        {" "}
-                        Keep refrigerated immediately after delivery and rinse gently before
-                        consuming. For the best juicing or smoothie experience, pair wheatgrass with
-                        citrus notes or blend into detox drinks. Delivered in eco-friendly packaging
-                        to minimize waste.
-                    </p>
-                </div>
-            ),
-        },
+       
     ];
 
     return (
@@ -213,7 +187,7 @@ const ProductDetails = () => {
                         <div className="relative aspect-square w-full lg:w-[400px] lg:h-[400px] overflow-hidden rounded-lg">
                             <img
                                 src={product?.images?.[selectedImage]}
-                                alt={product.title}
+                                alt={product?.title}
                                 className="w-full h-full object-cover"
                             />
                         </div>
@@ -324,7 +298,7 @@ const ProductDetails = () => {
                         </div>
                         <div className="flex items-center gap-3">
                             <RotateCcw className="w-5 h-5 md:w-6 md:h-6 text-gray-600" />
-                            <span className="text-sm md:text-base">No return policy</span>
+                            <span className="text-sm md:text-base">7 days return policy</span>
                         </div>
                     </div>
                 </div>

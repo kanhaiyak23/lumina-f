@@ -1,9 +1,21 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { staticProducts } from "../../constants/staticData";
+import { selectProduct } from "../../Redux Store/Slices/products";
 
 const Products = () => {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const allProducts = useSelector(state => state.products.products);
+
+    // Use products from Redux if available, otherwise fallback to static data
+    const productsToDisplay = allProducts.length > 0 ? allProducts : staticProducts;
+
+    const handleProductClick = (product) => {
+        dispatch(selectProduct(product)); // Store selected product in Redux
+        navigate(`/product/${product.id}`); // Navigate to product details page
+    };
 
     const features = [
         {
@@ -21,7 +33,7 @@ const Products = () => {
     ];
 
     // Show only first 6 products on home page
-    const displayProducts = staticProducts.slice(0, 6);
+    const displayProducts = productsToDisplay.slice(0, 6);
 
     return (
         <div className="max-w-7xl mx-auto px-4 py-16 bg-white">
@@ -53,7 +65,7 @@ const Products = () => {
                     <div
                         key={product.id}
                         className="rounded-3xl p-4 bg-white shadow-lg border border-purple-100 hover:shadow-xl transition-shadow cursor-pointer"
-                        onClick={() => navigate(`/product/${product.id}`)}
+                        onClick={() => handleProductClick(product)}
                     >
                         <div className="rounded-2xl overflow-hidden border border-purple-100 mb-6">
                             <img
