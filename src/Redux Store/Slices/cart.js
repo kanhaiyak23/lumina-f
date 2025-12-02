@@ -17,28 +17,34 @@ const cartSlice = createSlice({
                 return;
             }
 
-            const existingItem = state.items.find(item => item.id === product.id);
+            // Check if item exists with same ID AND same size (if size is applicable)
+            const existingItem = state.items.find(
+                item => item.id === product.id && item.size === product.size
+            );
 
             if (existingItem) {
-                // Create a new array with updated quantity
+                // Update quantity for specific size variant
                 state.items = state.items.map(item =>
-                    item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item,
+                    (item.id === product.id && item.size === product.size)
+                        ? { ...item, quantity: item.quantity + (product.quantity || 1) }
+                        : item
                 );
             } else {
-                // Add new product to the cart
+                // Add new product variant to the cart
                 state.items = [...state.items, { ...product, quantity: product.quantity || 1 }];
             }
         },
 
         updateQuantity: (state, action) => {
-            const { id, quantity } = action.payload;
-            const item = state.items.find(item => item.id === id);
+            const { id, quantity, size } = action.payload;
+            const item = state.items.find(item => item.id === id && item.size === size);
             if (item) {
                 item.quantity = Math.max(1, quantity);
             }
         },
         removeItem: (state, action) => {
-            state.items = state.items.filter(item => item.id !== action.payload);
+            const { id, size } = action.payload;
+            state.items = state.items.filter(item => !(item.id === id && item.size === size));
         },
         clearCart: state => {
             state.items = []; // Resets cart to empty

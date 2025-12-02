@@ -14,6 +14,7 @@ import { useSelector } from "react-redux";
 import { successToast } from "./utils/toasts";
 import NetworkStatus from "./views/NetworkStatus";
 
+
 const queryClient = new QueryClient({
     defaultOptions: {
         queries: {
@@ -42,7 +43,7 @@ function App() {
                 <Loading />
                 <NetworkStatus />
 
-                {phoneRequired && <PhoneInputComponent />}
+           
                 <RouterProvider
                     router={AppRouting}
                     future={{ v7_startTransition: true, v7_relativeSplatPath: true }}

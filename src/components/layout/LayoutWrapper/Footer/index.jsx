@@ -13,25 +13,21 @@ const Appbar = () => {
                     </div>
 
                     {/* <!-- Main Content Grid --> */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2 max-w-full">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 max-w-full">
                         {/* <!-- Customer Service --> */}
                         <div className="flex flex-col">
                             <h3 className="text-purple-400 text-lg mb-4 font-bold">
                                 Customer Service
                             </h3>
                             <div className="flex flex-col space-y-2">
-                                <a href="/about-us" className="hover:text-purple-400 transition-colors">
+                                <Link to="/about-us" className="hover:text-purple-400 transition-colors">
                                     About Us
-                                </a>
-                                <a href="/shop" className="hover:text-purple-400 transition-colors">
+                                </Link>
+                                <Link to="/products" className="hover:text-purple-400 transition-colors">
                                     Shop
-                                </a>
-                                <a href="#" className="hover:text-purple-400 transition-colors">
-                                    Size Guide
-                                </a>
-                                <a href="#" className="hover:text-purple-400 transition-colors">
-                                    FAQs
-                                </a>
+                                </Link>
+                                
+                                
                             </div>
                         </div>
 
@@ -39,18 +35,16 @@ const Appbar = () => {
                         <div className="flex flex-col">
                             <h3 className="text-purple-400 text-lg mb-4 font-bold">Company</h3>
                             <div className="flex flex-col space-y-2">
-                                <a href="/about-us" className="hover:text-purple-400 transition-colors">
+                                <Link to="/about-us" className="hover:text-purple-400 transition-colors">
                                     Our Story
-                                </a>
-                                <a href="#" className="hover:text-purple-400 transition-colors">
-                                    Sustainability
-                                </a>
-                                <a href="#" className="hover:text-purple-400 transition-colors">
+                                </Link>
+                                
+                                <Link to="/terms" className="hover:text-purple-400 transition-colors">
                                     Terms & Conditions
-                                </a>
-                                <a href="#" className="hover:text-purple-400 transition-colors">
+                                </Link>
+                                <Link to="/privacy" className="hover:text-purple-400 transition-colors">
                                     Privacy Policy
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -58,30 +52,18 @@ const Appbar = () => {
                         <div className="flex flex-col">
                             <h3 className="text-purple-400 text-lg mb-4 font-bold">Help</h3>
                             <div className="flex flex-col space-y-2">
-                                <a href="#" className="hover:text-purple-400 transition-colors">
-                                    Contact Us
-                                </a>
-                                <a href="#" className="hover:text-purple-400 transition-colors">
-                                    Track Order
-                                </a>
-                                <a href="#" className="hover:text-purple-400 transition-colors">
+                                
+                                
+                                <Link to="/refund-policy" className="hover:text-purple-400 transition-colors">
                                     Returns & Exchanges
-                                </a>
-                                <a href="#" className="hover:text-purple-400 transition-colors">
+                                </Link>
+                                <Link to="/shipping-policy" className="hover:text-purple-400 transition-colors">
                                     Shipping Info
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
-                        {/* <!-- Additional Links --> */}
-                        <div className="flex flex-col space-y-2 mt-5 sm:mt-10">
-                            <a href="#" className="hover:text-purple-400 transition-colors">
-                                Gift Cards
-                            </a>
-                            <a href="#" className="hover:text-purple-400 transition-colors">
-                                Student Discount
-                            </a>
-                        </div>
+                       
 
                         {/* <!-- Connect With Us --> */}
                         <div className="flex flex-col">
@@ -146,7 +128,7 @@ const Appbar = () => {
                                             />
                                         </svg>
                                     </span>
-                                    <span className="flex-grow truncate">Mumbai, India</span>
+                                    <span className="flex-grow truncate">Delhi, India</span>
                                 </div>
                             </div>
                         </div>

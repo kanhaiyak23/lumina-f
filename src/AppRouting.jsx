@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter ,ScrollRestoration} from "react-router-dom";
 
 //* Import Slices
 import { setHeaderTitle } from "./Redux Store/Slices/header.js";
@@ -29,6 +29,7 @@ import Profile from "./views/userAuth/Profile.jsx";
 import Subscription from "./views/Subscription/Subscription.jsx";
 import SubscriptionHistory from "./views/Subscription/SubscriptionHistory.jsx";
 import BusinessProfile from "./views/userAuth/businessProfile.jsx";
+import ScrollToTop from "./views/common/Scrolltotop.jsx";
 
 const { Login } = await import("./views/auth/Login/Login");
 // const {UserLogin} =await  import("./views/userAuth/userLogin.jsx");
@@ -245,7 +246,10 @@ const { Home } = await import("./views/Home/Home.jsx");
 let routes = createBrowserRouter([
     {
         path: "/",
-        element: <AppWrapper />,
+        element:<>
+        <ScrollToTop />
+        <AppWrapper />
+        </> ,
         // loader: async () => {
         //   const res = await fetchUsersData();
         //   if (res.status) {

@@ -7,6 +7,7 @@ export const staticProducts = [
         salePrice: 499,
         originalPrice: 600,
         stock_quantity: 50,
+        sizes: ["S", "M", "L", "XL"],
         images: [
             "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -21,9 +22,10 @@ export const staticProducts = [
         title: "Slim Fit Denim Jeans",
         description: "Stylish slim fit jeans made from durable denim. Features a modern cut and comfortable stretch.",
         price: 1000,
-        salePrice:999,
+        salePrice: 999,
         originalPrice: 1500,
         stock_quantity: 30,
+        sizes: ["S", "M", "L", "XL"],
         images: [
             "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -41,6 +43,7 @@ export const staticProducts = [
         salePrice: 2299,
         originalPrice: 3299,
         stock_quantity: 10,
+        sizes: ["S", "M", "L", "XL"],
         images: [
             "https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?q=80&w=980&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "https://images.unsplash.com/photo-1520975954732-35dd22299614?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -58,6 +61,7 @@ export const staticProducts = [
         salePrice: 499,
         originalPrice: 599,
         stock_quantity: 25,
+        sizes: ["S", "M", "L", "XL"],
         images: [
             "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -75,6 +79,7 @@ export const staticProducts = [
         salePrice: 899,
         originalPrice: 1999,
         stock_quantity: 40,
+        sizes: ["S", "M", "L", "XL"],
         images: [
             "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -92,6 +97,7 @@ export const staticProducts = [
         salePrice: 599,
         originalPrice: 999,
         stock_quantity: 20,
+        sizes: ["S", "M", "L", "XL"],
         images: [
             "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"

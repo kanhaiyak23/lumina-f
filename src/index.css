@@ -11,7 +11,7 @@ body,
 #root {
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* ! tailwindcss Font size change on screen size */

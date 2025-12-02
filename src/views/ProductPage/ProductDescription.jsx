@@ -11,24 +11,41 @@ import ProductCard from "./ProductCard";
 import Grid from "../../components/layout/grid/Grid";
 import { PRODUCT_INFO, REFUND_POLICY, SHIPPING_POLICY } from "../../constants/siteContent";
 import { warnToast } from "../../utils/toasts";
+import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const ProductDetails = () => {
     const dispatch = useDispatch();
-    
+
     const product = useSelector(selectSelectedProduct);
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
     const [selectedImage, setSelectedImage] = useState(0);
+    const [selectedSize, setSelectedSize] = useState("");
     const [quantity, setQuantity] = useState(1);
     const [activeTab, setActiveTab] = useState(0);
     const selectAllProducts = useSelector(state => state.products.products);
-    console.log(product)
+
+    const location = useLocation();
+
+    const { id } = useParams();
+
+    useEffect(() => {
+        // fetch or recalc based on id
+        console.log("Product changed", id);
+    });
+    // Scroll to top when component mounts or product changes
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, [location.pathname, product]);
+
     if (!product) {
-    return (
-        <div className="w-full py-20 text-center text-gray-600">
-            Loading product...
-        </div>
-    );
-}
+        return (
+            <div className="w-full py-20 text-center text-gray-600">
+                Loading product...
+            </div>
+        );
+    }
+
 
 
     const handleAddToCart = product => {
@@ -38,8 +55,13 @@ const ProductDetails = () => {
             return;
         }
 
+        if (!selectedSize && product.sizes) {
+            warnToast("Please select a size!");
+            return;
+        }
+
         try {
-            dispatch(addToCart({ ...product, quantity }));
+            dispatch(addToCart({ ...product, quantity, size: selectedSize }));
             toast.success(`${product.title} added to cart!`, {
                 position: "top-right",
                 autoClose: 3000,
@@ -135,7 +157,7 @@ const ProductDetails = () => {
                 </div>
             ),
         },
-       
+
     ];
 
     return (
@@ -168,11 +190,10 @@ const ProductDetails = () => {
                                 <button
                                     key={index}
                                     onClick={() => setSelectedImage(index)}
-                                    className={`flex-shrink-0 aspect-square rounded-lg overflow-hidden border-2 w-16 h-16 md:w-20 md:h-20 lg:w-[100px] lg:h-[100px] ${
-                                        selectedImage === index
-                                            ? "border-green-600"
-                                            : "border-gray-200"
-                                    }`}
+                                    className={`flex-shrink-0 aspect-square rounded-lg overflow-hidden border-2 w-16 h-16 md:w-20 md:h-20 lg:w-[100px] lg:h-[100px] ${selectedImage === index
+                                        ? "border-green-600"
+                                        : "border-gray-200"
+                                        }`}
                                 >
                                     <img
                                         src={image}
@@ -203,11 +224,10 @@ const ProductDetails = () => {
                                 {[...Array(5)].map((_, index) => (
                                     <Star
                                         key={index}
-                                        className={`w-4 h-4 md:w-5 md:h-5 ${
-                                            index < product.rating
-                                                ? "text-yellow-400 fill-current"
-                                                : "text-gray-300"
-                                        }`}
+                                        className={`w-4 h-4 md:w-5 md:h-5 ${index < product.rating
+                                            ? "text-yellow-400 fill-current"
+                                            : "text-gray-300"
+                                            }`}
                                     />
                                 ))}
                             </div>
@@ -236,6 +256,28 @@ const ProductDetails = () => {
                         <div className="mb-6">
                             <span className="text-green-600 font-medium">In Stock</span>
                         </div>
+
+                        {/* Size Selector */}
+                        {product.sizes && (
+                            <div className="mb-6">
+                                <h3 className="text-sm font-medium text-gray-900 mb-3">Select Size</h3>
+                                <div className="flex flex-wrap gap-3">
+                                    {product.sizes.map((size) => (
+                                        <button
+                                            key={size}
+                                            onClick={() => setSelectedSize(size)}
+                                            className={`w-12 h-12 rounded-md border flex items-center justify-center text-sm font-medium transition-all
+                                                ${selectedSize === size
+                                                    ? "border-green-600 bg-green-50 text-green-600"
+                                                    : "border-gray-200 text-gray-600 hover:border-green-600"
+                                                }`}
+                                        >
+                                            {size}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
                         <div className="bg-gray-50 border border-gray-100 rounded-2xl p-5 space-y-3 mb-8">
                             <h3 className="text-lg font-semibold text-gray-900">
                                 Why you'll love it

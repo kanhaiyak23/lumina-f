@@ -4,15 +4,15 @@ import { Minus, Plus, Trash2 } from "lucide-react";
 import CustomButton from "../../components/common/CustomButton/CustomButton";
 import { updateQuantity, removeItem } from "../../Redux Store/Slices/cart";
 
-const CartItem = ({ id, title, description, price, quantity, images }) => {
+const CartItem = ({ id, title, description, price, quantity, images, size }) => {
     const dispatch = useDispatch();
 
     const handleUpdateQuantity = newQuantity => {
-        dispatch(updateQuantity({ id, quantity: newQuantity }));
+        dispatch(updateQuantity({ id, quantity: newQuantity, size }));
     };
 
     const handleRemove = () => {
-        dispatch(removeItem(id));
+        dispatch(removeItem({ id, size }));
     };
 
     return (
@@ -31,6 +31,9 @@ const CartItem = ({ id, title, description, price, quantity, images }) => {
                     <div className="flex-1 min-w-0">
                         {/* Title and Description */}
                         <h3 className="text-base font-semibold truncate max-w-[100%]">{title}</h3>
+                        {size && (
+                            <p className="text-sm font-medium text-gray-500 mb-1">Size: {size}</p>
+                        )}
                         <p className="text-gray-600 text-sm line-clamp-2 max-w-[90%] overflow-hidden">
                             {description}
                         </p>
@@ -93,6 +96,9 @@ const CartItem = ({ id, title, description, price, quantity, images }) => {
                     />
                     <div className="flex-1 min-w-0 ">
                         <h3 className="text-base font-semibold truncate">{title}</h3>
+                        {size && (
+                            <p className="text-sm font-medium text-gray-500 mb-1">Size: {size}</p>
+                        )}
                         <p className="text-gray-600 text-sm line-clamp-2 w-full overflow-hidden max-w-[80%]">
                             {description}
                         </p>

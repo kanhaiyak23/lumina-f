@@ -14,6 +14,7 @@ const Products = () => {
 
     const handleProductClick = (product) => {
         dispatch(selectProduct(product)); // Store selected product in Redux
+        window.scrollTo(0, 0); // Scroll to top of page
         navigate(`/product/${product.id}`); // Navigate to product details page
     };
 
@@ -81,7 +82,7 @@ const Products = () => {
                             <p className="text-gray-600 text-lg mb-3 line-clamp-2">
                                 {product.summary}
                             </p>
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-2 mb-2">
                                 {product.salePrice ? (
                                     <>
                                         <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
@@ -97,6 +98,11 @@ const Products = () => {
                                     </span>
                                 )}
                             </div>
+                            {product.sizes && (
+                                <p className="text-sm text-gray-500 font-medium">
+                                    Available in {product.sizes.join(", ")}
+                                </p>
+                            )}
                         </div>
                     </div>
                 ))}
