@@ -82,7 +82,7 @@ export const staticProducts = [
         sizes: ["S", "M", "L", "XL"],
         images: [
             "https://martinvalen.com/29669-mv_large_default/chunky-sneakers-shoes-white.jpg",
-           "https://m.media-amazon.com/images/I/614aiM56siL._AC_UY1000_.jpg"
+           "https://m.media-amazon.com/images/I/71+QbFCzINL._AC_UY1000_.jpg"
             
         ],
         summary: "Comfortable running shoes.",
