@@ -81,8 +81,9 @@ export const staticProducts = [
         stock_quantity: 40,
         sizes: ["S", "M", "L", "XL"],
         images: [
-            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            "https://m.media-amazon.com/images/I/614aiM56siL._AC_UY1000_.jpg",
+           "https://m.media-amazon.com/images/I/614aiM56siL._AC_UY1000_.jpg"
+            
         ],
         summary: "Comfortable running shoes.",
         sku: "SH-RUN-005",
