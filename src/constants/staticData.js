@@ -71,43 +71,43 @@ export const staticProducts = [
         tags: ["dress", "floral", "summer", "women"],
         categories: [{ id: "c4", name: "Dresses" }]
     },
-    {
-        id: "5",
-        title: "Running Sneakers",
-        description: "High-performance running sneakers with cushioned soles and breathable mesh upper.",
-        price: 899,
-        salePrice: 899,
-        originalPrice: 1999,
-        stock_quantity: 40,
-        sizes: ["S", "M", "L", "XL"],
-        images: [
-            "https://martinvalen.com/29669-mv_large_default/chunky-sneakers-shoes-white.jpg",
-           "https://m.media-amazon.com/images/I/71+QbFCzINL._AC_UY1000_.jpg"
+    // {
+    //     id: "5",
+    //     title: "Running Sneakers",
+    //     description: "High-performance running sneakers with cushioned soles and breathable mesh upper.",
+    //     price: 899,
+    //     salePrice: 899,
+    //     originalPrice: 1999,
+    //     stock_quantity: 40,
+    //     sizes: ["S", "M", "L", "XL"],
+    //     images: [
+    //         "https://martinvalen.com/29669-mv_large_default/chunky-sneakers-shoes-white.jpg",
+    //        "https://m.media-amazon.com/images/I/71+QbFCzINL._AC_UY1000_.jpg"
             
-        ],
-        summary: "Comfortable running shoes.",
-        sku: "SH-RUN-005",
-        tags: ["shoes", "sneakers", "running", "sport"],
-        categories: [{ id: "c5", name: "Footwear" }]
-    },
-    {
-        id: "6",
-        title: "Cozy Knit Sweater",
-        description: "Warm and cozy knit sweater, ideal for chilly days. Made from a soft wool blend.",
-        price: 550,
-        salePrice: 599,
-        originalPrice: 999,
-        stock_quantity: 20,
-        sizes: ["S", "M", "L", "XL"],
-        images: [
-            "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-        ],
-        summary: "Warm wool blend sweater.",
-        sku: "SW-GRY-006",
-        tags: ["sweater", "knit", "winter", "casual"],
-        categories: [{ id: "c6", name: "Tops" }]
-    }
+    //     ],
+    //     summary: "Comfortable running shoes.",
+    //     sku: "SH-RUN-005",
+    //     tags: ["shoes", "sneakers", "running", "sport"],
+    //     categories: [{ id: "c5", name: "Footwear" }]
+    // },
+    // {
+    //     id: "6",
+    //     title: "Cozy Knit Sweater",
+    //     description: "Warm and cozy knit sweater, ideal for chilly days. Made from a soft wool blend.",
+    //     price: 550,
+    //     salePrice: 599,
+    //     originalPrice: 999,
+    //     stock_quantity: 20,
+    //     sizes: ["S", "M", "L", "XL"],
+    //     images: [
+    //         "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    //         "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    //     ],
+    //     summary: "Warm wool blend sweater.",
+    //     sku: "SW-GRY-006",
+    //     tags: ["sweater", "knit", "winter", "casual"],
+    //     categories: [{ id: "c6", name: "Tops" }]
+    // }
 ];
 
 export const staticUser = {
