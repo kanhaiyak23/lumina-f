@@ -123,6 +123,6 @@ export const staticCategories = [
     { id: "c2", title: "Pants" },
     { id: "c3", title: "Outerwear" },
     { id: "c4", title: "Dresses" },
-    { id: "c5", title: "Footwear" },
-    { id: "c6", title: "Tops" }
+    // { id: "c5", title: "Footwear" },
+    // { id: "c6", title: "Tops" }
 ];
