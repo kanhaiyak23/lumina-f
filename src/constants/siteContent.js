@@ -58,11 +58,16 @@ export const TERMS_AND_CONDITITIONS = {
             ],
         },
         {
-            heading: "6. Governing Law",
+            heading: "6. Ownership",
+            content: "This business, Lumina, is owned and operated by Kanhaiya Kumar.",
+        },
+        {
+            heading: "7. Governing Law",
             content: "These terms are governed by the laws of India.",
         },
     ],
 };
+
 
 
 export const PRIVACY_POLICY = {
@@ -117,19 +122,21 @@ export const REFUND_POLICY = {
                 "Returns are accepted within 7 days of delivery for unused, unwashed, and undamaged items with original tags.",
         },
         {
-            heading: "2. Refund Eligibility",
-            items: [
-                "Wrong or defective product delivered.",
-                "Size or fit issues (unused items only).",
-                "Order cancelled before shipping.",
-            ],
-        },
+    heading: "2. Return Eligibility",
+    items: [
+        "A wrong or defective product has been delivered.",
+        "Size or fit issues, provided the product is unused and in its original condition.",
+        "The order is cancelled before it has been shipped.",
+        "If a return request is approved, the returned product will be delivered within 5–7 business days."
+    ],
+},
         {
             heading: "3. Refund Process",
             items: [
-                "You must initiate a return request with photos of the product.",
-                "After verification, refunds are processed within 5–7 business days.",
-            ],
+    "You must initiate a return request along with clear photos of the product.",
+    "Once the return request is verified and approved, the refund will be initiated.",
+    "The refunded amount will be credited back to the original mode of payment within 7–10 business days."
+],
         },
         {
             heading: "4. Non-Refundable Situations",
@@ -157,7 +164,8 @@ export const SHIPPING_POLICY = {
             heading: "2. Shipping Time",
             items: [
                 "Orders are processed within 1–2 business days.",
-                "Delivery typically takes 3–7 business days depending on location.",
+                "Products will be delivered within 5–7 business days."
+,
             ],
         },
         {

@@ -81,7 +81,7 @@ const Appbar = () => {
                     >
                         Products
                     </button>
-                    <button
+                    {/* <button
                         className={`${activeLink === "contact" ? "text-[#45B618]" : "text-black"
                             } hover:text-[#45B618] transition-colors`}
                         onClick={() => {
@@ -90,7 +90,7 @@ const Appbar = () => {
                         }}
                     >
                         Contact
-                    </button>
+                    </button> */}
                 </div>
 
                 {/* Right Section */}

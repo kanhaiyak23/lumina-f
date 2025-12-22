@@ -128,7 +128,7 @@ const Appbar = () => {
                                             />
                                         </svg>
                                     </span>
-                                    <span className="flex-grow truncate">Delhi, India</span>
+                                    <span className="flex-grow "> Near Hanuman Mandir, Balika Vidyapith Chowk, Wazirpur Road, Lakhisarai, Bihar – 811311, India</span>
                                 </div>
                             </div>
                         </div>
