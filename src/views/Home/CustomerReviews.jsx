@@ -21,7 +21,7 @@ const CustomerReviews = () => {
         },
         {
             id: 3,
-            name: "Amit kumar",
+            name: "Anushka kumari",
             image: customer3,
             review: "I'm impressed by Lumina's commitment to sustainable fashion. The clothes are not only stylish but also eco-friendly. It feels good to look good while supporting ethical practices!",
         },
