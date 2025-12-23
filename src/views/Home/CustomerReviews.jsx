@@ -10,19 +10,19 @@ const CustomerReviews = () => {
         {
             id: 1,
             name: "Komal kumari",
-            image: customer1,
+            // image: customer1,
             review: "Absolutely love the quality of Lumina's clothing! The fabrics are premium, the fit is perfect, and the designs are timeless. I've received so many compliments on my new wardrobe!",
         },
         {
             id: 2,
             name: "Navnit Naman",
-            image: customer2,
+            // image: customer2,
             review: "Shopping at Lumina has been a game-changer. The attention to detail in every piece is remarkable, and the customer service is exceptional. Fast shipping and beautiful packaging too!",
         },
         {
             id: 3,
             name: "Anushka kumari",
-            image: customer3,
+            // image: customer3,
             review: "I'm impressed by Lumina's commitment to sustainable fashion. The clothes are not only stylish but also eco-friendly. It feels good to look good while supporting ethical practices!",
         },
     ];
@@ -56,11 +56,11 @@ const CustomerReviews = () => {
                     >
                         {/* Customer Image */}
                         <div className="flex flex-col items-center mb-6">
-                            <img
+                            {/* <img
                                 src={review.image}
                                 alt={review.name}
                                 className="w-24 h-24 rounded-full mb-4 border-4 border-purple-200"
-                            />
+                            /> */}
                             <h3 className="font-semibold text-2xl text-gray-800">{review.name}</h3>
                         </div>
 
