@@ -192,7 +192,7 @@ const Main = () => {
                     <TruckIcon />
                     <div>
                         <p>Free Shipping</p>
-                        <span>On orders over $50</span>
+                        <span>On orders over 500</span>
                     </div>
                 </FeatureItem>
                 <FeatureItem>

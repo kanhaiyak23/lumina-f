@@ -9,19 +9,19 @@ const CustomerReviews = () => {
     const reviews = [
         {
             id: 1,
-            name: "Sarah Johnson",
+            name: "Komal kumari",
             image: customer1,
             review: "Absolutely love the quality of Lumina's clothing! The fabrics are premium, the fit is perfect, and the designs are timeless. I've received so many compliments on my new wardrobe!",
         },
         {
             id: 2,
-            name: "Michael Chen",
+            name: "Navnit Naman",
             image: customer2,
             review: "Shopping at Lumina has been a game-changer. The attention to detail in every piece is remarkable, and the customer service is exceptional. Fast shipping and beautiful packaging too!",
         },
         {
             id: 3,
-            name: "Emma Williams",
+            name: "Amit kumar",
             image: customer3,
             review: "I'm impressed by Lumina's commitment to sustainable fashion. The clothes are not only stylish but also eco-friendly. It feels good to look good while supporting ethical practices!",
         },
